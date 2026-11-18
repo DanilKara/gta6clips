@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — GTA6 Clips</title>
+  <meta name="description" content="What data the GTA6 Clips tool uses, how long it keeps it and how to revoke access.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html">GTA6 Clips</a>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
+</header>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective date: November 18, 2026. Operator: DanilKara. Contact:
+    <a href="https://github.com/DanilKara/gta6clips/issues/new">GitHub Issues</a>.</p>
+
+  <p>GTA6 Clips is an internal tool that prepares short highlight clips from Twitch streams and uploads them to our
+    own YouTube and TikTok accounts. It has no public users, no sign-up and no website accounts. This policy explains
+    what data the tool processes, why, and for how long.</p>
+
+  <h2>1. Data from Twitch</h2>
+  <ul>
+    <li><strong>Stream information</strong> (channel name, stream title, game, viewer count) from the official Twitch
+      API — to know when allowed streamers are live.</li>
+    <li><strong>Public chat messages</strong> of those streams (viewer usernames and message text), read anonymously
+      — only to detect moments when viewers react strongly. Chat logs are kept on our computer for at most
+      <strong>3 days</strong> and then deleted automatically. For each detected moment, up to 20 chat lines
+      that show the reaction are kept with the clip's record in our internal database, so we can check why the
+      moment was picked.</li>
+    <li><strong>Video of the stream</strong> — a rolling buffer of the last ~20 minutes, so a detected moment can be
+      cut. Older video is deleted continuously. Clip files are deleted within 3 days after the clip is published,
+      rejected or removed.</li>
+  </ul>
+  <p>We only process streams of channels on our allow-list. We do not build profiles of viewers and do not combine
+    chat data with any other data.</p>
+
+  <h2>2. YouTube API Services</h2>
+  <p>The tool uses <strong>YouTube API Services</strong> to upload clips to our own YouTube channel and, when a
+    streamer asks, to delete them. By using our channel's content you are also subject to the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; Google's processing of data is described in
+    the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <ul>
+    <li>Access requested: <code>youtube.upload</code> (upload videos) and <code>youtube.force-ssl</code> (delete our
+      own videos on a removal request).</li>
+    <li>The only Google account connected is our own channel account. The OAuth token is stored only on our computer
+      and is never shared.</li>
+    <li>We do not access, store or use any data of YouTube viewers — no comments, subscribers, analytics or watch data.</li>
+    <li>Access can be revoked at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>3. TikTok</h2>
+  <ul>
+    <li>The tool uses TikTok Login Kit and the Content Posting API to upload clips to our own TikTok account
+      (scopes <code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>).</li>
+    <li>The only TikTok account connected is our own. The access token and the account's open ID returned by TikTok
+      are stored only on our computer and never shared.</li>
+    <li>We do not access data of other TikTok users.</li>
+    <li>Access can be revoked in the TikTok app: Settings and privacy → Security and permissions → Apps and services
+      permissions.</li>
+  </ul>
+
+  <h2>4. Notifications</h2>
+  <p>The tool sends us status messages (for example “3 clips are waiting for review”) through a private Telegram bot.
+    These messages contain clip identifiers and technical status, not viewer data.</p>
+
+  <h2>5. Sharing and selling</h2>
+  <p>We do not sell, rent or share any of the data above with third parties, and we do not use it for advertising.
+    Data leaves our computer only as the published clips themselves and the text posted with them.</p>
+
+  <h2>6. This website</h2>
+  <p>This website has no cookies, no analytics and no forms.</p>
+
+  <h2>7. Your rights and requests</h2>
+  <p>Streamers can ask us to remove all clips of their channel and to stop clipping it. Anyone can ask what data about
+    them we hold or ask for it to be deleted. Open a request on <a href="https://github.com/DanilKara/gta6clips/issues/new">GitHub</a>; we
+    normally act within 24 hours and answer within 30 days. If you are in the EU, you may also contact your local data
+    protection authority.</p>
+
+  <h2>8. Children</h2>
+  <p>Our content is not directed at children under 13 and we do not knowingly process their data.</p>
+
+  <h2>9. Changes</h2>
+  <p>We will update the effective date above when this policy changes.</p>
+</main>
+<footer>
+  © 2026 DanilKara · <a href="index.html">About</a> · <a href="terms.html">Terms of Use</a>
+</footer>
+</body>
+</html>
